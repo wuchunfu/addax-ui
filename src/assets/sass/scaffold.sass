@@ -1,0 +1,55 @@
+@charset "UTF-8"
+@import "variables"
+
+@each $key, $color in $colors
+  .#{$key}
+    color: $color !important
+
+@each $gap in (0, 10, 15, 20, 25, 30)
+  $val: #{$gap}px
+  @if $val == 0px
+    $val: 0
+  .m#{$gap}
+    margin: $val
+  .mt#{$gap}
+    margin-top: $val
+  .mr#{$gap}
+    margin-right: $val
+  .mb#{$gap}
+    margin-bottom: $val
+  .ml#{$gap}
+    margin-left: $val
+  .mx#{$gap}
+    margin-left: $val
+    margin-right: $val
+  .my#{$gap}
+    margin-top: $val
+    margin-bottom: $val
+  .p#{$gap}
+    padding: $val
+  .pt#{$gap}
+    padding-top: $val
+  .pr#{$gap}
+    padding-right: $val
+  .pb#{$gap}
+    padding-bottom: $val
+  .pl#{$gap}
+    padding-left: $val
+  .px#{$gap}
+    padding-left: $val
+    padding-right: $val
+  .py#{$gap}
+    padding-top: $val
+    padding-bottom: $val
+
+@each $r in 90, 180
+  .rotate#{$r}
+    transform: rotate(#{$r}deg)
+
+.tac
+  text-align: center
+.fwb
+  font-weight: bold
+.curp
+  cursor: pointer
+  user-select: none

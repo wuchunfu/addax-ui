@@ -1,0 +1,74 @@
+@charset "UTF-8"
+@import "font", "scaffold", "transition"
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+// $fontFamily: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif
+// $fontNormal: 14px
+// $black: #333
+body
+  min-width: 1200px
+  line-height: 1.5
+  font-family: $fontFamily
+  font-size: $fontNormal
+  color: $black
+  background: url("~@img/bg.png") no-repeat center
+  background-size: 100% 100%
+
+ul, li, ol
+  margin: 0
+  padding: 0
+  list-style: none
+
+p
+  margin: 0
+  padding: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+.table
+  width: 100%
+  margin: 0
+  border: none
+  border-collapse: collapse
+  tr
+    background: #fff
+    &:nth-of-type(odd)
+      background: #F8FAFC
+  td
+    padding: 17px 25px
+    &:first-child
+      width: 150px
+      color: #707070
+    &:not(:first-child)
+      color: $black
+
+.details
+  line-height: 2
+  white-space: pre-wrap
+  word-break: break-word
+
+._inner-box
+  width: 80%
+  box-sizing: border-box
+  border-radius: 10px
+  padding: 10px 40px 10px 10px
+  border: 1px solid $gray-dark
+  /deep/ .el-table__body, .el-table__footer, .el-table__header
+    width: auto !important
+
+pre
+  white-space: pre-wrap       /* css-3 */
+  white-space: -moz-pre-wrap  /* Mozilla, since 1999 */
+  white-space: -pre-wrap      /* Opera 4-6 */
+  white-space: -o-pre-wrap    /* Opera 7 */
+  word-wrap: break-word     /* Internet Explorer 5.5+ */
+
