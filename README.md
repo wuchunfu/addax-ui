@@ -1,4 +1,7 @@
-# el-cx-manage
+# Addax-UI
+
+[Addax-admin](https://github.com/wgzhao/addax-admin) 项目的前端代码，暂未完成。
+
 
 ## Project setup
 ```
@@ -34,6 +37,3 @@ npm run test:e2e
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
