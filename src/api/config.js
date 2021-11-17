@@ -7,6 +7,7 @@ import { Message } from 'element-ui'
 console.log(config.apiBaseUrl)
 Axios.defaults.baseURL = config.apiBaseUrl
 Axios.defaults.timeout = 300000
+Axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 // Axios.defaults.headers['Content-Type'] = 'application/json; charset=utf-8'
 
 window.__axiosPromiseArr = []

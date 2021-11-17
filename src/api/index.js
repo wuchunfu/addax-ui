@@ -9,8 +9,8 @@ export default {
   // }
   // 登录
 
-  login: '/login/login', //用户登录接口
-  register: '/login/register', //注册接口
+  login: '/user/login', //用户登录接口
+  register: '/user/register', //注册接口
 
 
   // 管理员端 首页

@@ -16,7 +16,7 @@ module.exports = {
     // proxy: 'http://10.60.172.165:9091'
     proxy: {
       '/api': {
-        target: 'http://10.60.171.199:9080/zeus',
+        target: 'http://127.0.0.1:9080/addax',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'

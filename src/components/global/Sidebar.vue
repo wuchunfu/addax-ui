@@ -1,7 +1,7 @@
 <template lang="pug">
   .sidebar
     .sidebar-header
-      img.header-img(src="~@img/homelogotext.png")
+      //- img.header-img(src="~@img/homelogotext.png")
     el-scrollbar.sidebar-body(tag="ul")
       li.sidebar-body__li(
       v-for="(item, idx) in menus.filter(t => !$_.isEmpty(t))",

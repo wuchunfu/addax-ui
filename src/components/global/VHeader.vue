@@ -2,7 +2,7 @@
   .header
     // img.header__logo(src="@img/logo.png")
     .left-box
-      span.header__title 数据交换综合管理平台
+      span.header__title Addax 管理系统
       breadcrumb
     .header-user
       img.header-user__avatar(:src="userInfo.avatar")

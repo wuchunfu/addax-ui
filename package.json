@@ -1,10 +1,11 @@
 {
-  "name": "el-cx-manage",
+  "name": "addax-admin",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --mode development",
     "test-serve": "vue-cli-service serve --mode test",
+    "prod-serve": "vue-cli-service serve --mode production",
     "build:stage": "vue-cli-service build --mode test",
     "build:prod": "vue-cli-service build",
     "lint": "vue-cli-service lint",

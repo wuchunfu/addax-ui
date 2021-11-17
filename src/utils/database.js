@@ -58,7 +58,7 @@ export default {
         session: ''
       },
       form: [
-        {label: 'splitPk', model:'splitPk',disabled: false, value: '', placeholder:"使用splikPK代表的字段进行数据分片",type: 'input', require: [{required: true, message: '请输入splikPK', trigger: ['blur', 'change']}]},
+        {label: 'splitPk', model:'splitPk',disabled: false, value: '', placeholder:"使用splikPK代表的字段进行数据分片",type: 'input', require: [{required: false, message: '请输入splikPK', trigger: ['blur', 'change']}]},
         {label: 'where条件', model:'where', disabled: false, value: '1=1', placeholder:"针对表的筛选条件，不需要再加where",type: 'textarea', require: []},
         {label: 'querySql', model:"querySql", disabled: false, value: '', placeholder:"使用自定义的SQL而不是指定表来获取数据，当配置了这一项之后，DataX系统就会忽略table，column这些配置项",type: 'textarea', require: []},
         {label: 'fetchSize', model:"fetchSize", disabled: false, value: '20480', placeholder:"",type: 'input', require: []},
@@ -98,7 +98,7 @@ export default {
         querySql: '',
       },
       form: [
-        {label: 'splitPk', model:'splitPk',disabled: false, value: '', placeholder:"使用splikPK代表的字段进行数据分片",type: 'input', require: [{required: true, message: '请输入splikPK', trigger: ['blur', 'change']}]},
+        {label: 'splitPk', model:'splitPk',disabled: false, value: '', placeholder:"使用splikPK代表的字段进行数据分片",type: 'input', require: [{required: false, message: '请输入splikPK', trigger: ['blur', 'change']}]},
         {label: 'where条件', model:'where', disabled: false, value: '1=1', placeholder:"针对表的筛选条件，不需要再加where",type: 'textarea', require: []},
         {label: 'querySql', model:"querySql", disabled: false, value: '', placeholder:"使用自定义的SQL而不是指定表来获取数据，当配置了这一项之后，DataX系统就会忽略table，column这些配置项",type: 'textarea', require: []}
       ],
